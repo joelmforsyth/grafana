@@ -658,4 +658,8 @@ const (
 	// FlagScopeFilters
 	// Enables the use of scope filters in Grafana
 	FlagScopeFilters = "scopeFilters"
+
+	// FlagTlsMemcached
+	// Use TLS-enabled memcached in the enterprise caching feature
+	FlagTlsMemcached = "tlsMemcached"
 )
