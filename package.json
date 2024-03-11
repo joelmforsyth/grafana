@@ -159,7 +159,7 @@
     "core-js": "3.36.0",
     "css-loader": "6.10.0",
     "css-minimizer-webpack-plugin": "6.0.0",
-    "cypress": "13.1.0",
+    "cypress": "13.6.6",
     "cypress-file-upload": "5.0.8",
     "esbuild": "0.18.12",
     "esbuild-loader": "3.0.1",
