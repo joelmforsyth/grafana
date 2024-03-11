@@ -15,6 +15,13 @@ export function getHeuristicByMetricFactorCalculator(heuristic: HeuristicByMetri
   return (compareMetric: string) => heuristic.get(compareMetric) || 1.0;
 }
 
+export function sortMetrics(metricList: string[], calculator: CalculateDistanceFactor) {
+  return metricList.sort((metricA, metricB) => {
+    const [a, b] = [metricA, metricB].map(calculator);
+    return a - b;
+  });
+}
+
 export function sortRelatedMetrics(metricList: string[], factorCalculators: CalculateDistanceFactor[]) {
   return metricList.sort((metricA, metricB) => {
     const [a, b] = [metricA, metricB].map((metric) =>
